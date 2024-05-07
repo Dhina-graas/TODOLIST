@@ -1,10 +1,10 @@
 body{
-  background-color: hsl(206, 89%, 53%);
+  background-color: hsl(206, 89%, 68%);
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  background:url(/2301.q702.034.S.m005.c12.conference\ stage.jpg) no-repeat;
+  /* background:url(/2301.q702.034.S.m005.c12.conference\ stage.jpg) no-repeat fixed; */
   background-size: cover;
   min-height: 100vh;
   background-position: center;
@@ -14,6 +14,7 @@ body{
   
   text-align: center;
   width: 600px;
+  height: fit-content;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, .2);
   backdrop-filter: blur(30px);
@@ -31,9 +32,10 @@ body{
 
 ol{
   padding: 0;
-  display: flex;
-  flex-direction:column ;
+  
   align-items: center;
+  overflow: hidden;
+  
 }
 
 
@@ -95,21 +97,20 @@ input[type="text"]{
 }
 
 ul{
-  font-size:2rem;
-  font-weight: bold;
+  font-size:15px;
+  
   padding: 15px;
   background-color: hsl(202, 96%, 69%);
   margin-bottom: 10px;
   border: 3px solid hsl(0, 1%, 33%);
   border-radius: 16px;
   display: flex;
-  min-width: 350px;
-  min-height: 10px;
   align-items: center;
 }
 
 .text{
   flex: 1;
+  overflow: hidden;
 }
 
 .delete-button, .move-button{
